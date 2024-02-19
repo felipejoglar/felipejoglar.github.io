@@ -1,5 +1,24 @@
 ---
 title: "Blog"
+description: "Writing about software development"
 layout: default
-redirect_to: /blog/
 ---
+<div class="headline">
+  <header>
+    <h1>Coming soon 🚧</h1>
+  </header>
+</div>
+
+<div class="page posts">
+  <section>
+    <article>
+      {% for post in site.posts %}
+      <div>
+        <div class="date">{{ post.date | date: "%B %-d, %Y" }}</div>
+        <h2><a href="{{ post.url | absolute_url }}">{{ post.title | markdownify }}</a></h1>
+        <div class="desc">{{ post.description | markdownify }}</div>
+      </div>
+      {% endfor %}
+    </article>  
+  </section>
+</div>
