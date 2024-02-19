@@ -10,9 +10,6 @@ highlighter: rouge
 permalink: /:title/
 
 exclude:
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
   - README.md
 
 sass:
