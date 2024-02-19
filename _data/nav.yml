@@ -1,0 +1,8 @@
+- title: "Blog"
+  url: "/blog"
+  collection: "posts"
+
+- title: "GitHub"
+  url: "https://github.com/felipejoglar"
+  external: true
+

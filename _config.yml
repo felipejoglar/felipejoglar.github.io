@@ -1,0 +1,22 @@
+title: "felipejoglar.dev"
+description: "Programmer"
+url: https://felipejoglar.github.io
+image: /assets/images/opengraph.png
+github: felipejoglar
+repository: felipejoglar/felipejoglar.github.io
+markdown: kramdown
+highlighter: rouge
+
+permalink: /:title/
+
+exclude:
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+sass:
+  style: compressed
+
+redirect_from:
+  json: false
