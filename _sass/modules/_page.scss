@@ -251,6 +251,23 @@
       div.desc {
         font-size: var(--font-size-x-large);
       }
+
+      a.tag {
+        background: var(--color-base-darker);
+        border-radius: 1.1em;
+        color: rgba(var(--rgb-grey), 0.6);
+        font-family: var(--font-family-mono);
+        font-size: var(--font-size-x-small);
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 1em;
+        padding: 0.6em 0.9em;
+        text-decoration: none;
+        transition:
+          background var(--transition),
+          color var(--transition)
+        ;
+      }
     }
   }
 
@@ -307,9 +324,18 @@
         &:focus button {
           opacity: 1;
         }
-
       }
 
+      .post-headline {
+        a.tag {
+
+          &:hover,
+          &:focus {
+            background: var(--color-base-darkest);
+          }
+
+        }
+      }
     }
 
     &.post {

@@ -141,6 +141,7 @@ video {
   height: auto;
   max-width: 100%;
   width: 100%;
+  border-radius: 0.4em;
 }
 
 code {
@@ -153,6 +154,15 @@ code {
   letter-spacing: normal;
   line-height: 1em;
   padding: 0.2em 0.4em;
+}
+
+figure {
+  text-align: center;
+  font-size: var(--font-size-small);
+
+  figcaption {
+    padding: 0.5em 0em;
+  }
 }
 
 @media(min-width: 64em) {

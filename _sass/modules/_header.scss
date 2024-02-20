@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   padding: 0.75em;
-  background-color: rgba(var(--rgb-base), 0.5);
+  background-color: rgba(var(--rgb-base-darkest), 0.25);
   backdrop-filter: blur(20px);
   position: sticky;
   top: 0px;
@@ -48,25 +48,6 @@
         padding: 0.125em 0 0 0;
         text-decoration: none;
       }
-
-      a.release {
-        background: var(--color-base-darker);
-        border-radius: 1.1em;
-        color: rgba(var(--rgb-grey), 0.6);
-        display: flex;
-        font-family: var(--font-family-mono);
-        font-size: 35%;
-        font-weight: 400;
-        letter-spacing: normal;
-        line-height: 1em;
-        padding: 0.6em 0.9em;
-        text-decoration: none;
-        transition:
-          background var(--transition),
-          color var(--transition)
-        ;
-      }
-    
     }
 
   
@@ -124,15 +105,6 @@
           &:hover,
           &:focus {
             color: var(--color-mint);
-          }
-
-        }
-
-        a.release {
-
-          &:hover,
-          &:focus {
-            background: var(--color-base-darkest);
           }
 
         }

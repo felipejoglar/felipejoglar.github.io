@@ -24,6 +24,9 @@
               <div class="date">{{ page.date | date: "%B %-d, %Y" }}</div>
               <h1 class="title">{{ page.title | markdownify }}</h1>
               <div class="desc">{{ page.description | markdownify }}</div>
+              {% for tag in page.tags %}
+                <a class="tag" href="#" aria-label="{{ tag }}">{{ tag }}</a>
+              {% endfor %}
             </div>
             {{ content }}
             <nav>

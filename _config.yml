@@ -9,6 +9,13 @@ highlighter: rouge
 
 permalink: /:title/
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 exclude:
   - README.md
 
