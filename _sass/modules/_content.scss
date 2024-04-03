@@ -300,6 +300,17 @@
     content: "]";
     display: inline-block
   }
+
+  .content .footnotes:before {
+    color: var(--color-white);
+    content: "***";
+    position: relative;
+    left: 50%;
+    font-size: var(--font-size-xx-large);
+    font-weight: 500;
+    letter-spacing: .15em;
+    line-height: 2.5
+  }
   
   .content .footnotes ol li {
     display: flex;
