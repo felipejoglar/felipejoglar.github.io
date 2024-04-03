@@ -1,0 +1,15 @@
+{%- assign author = site.authors | find_exp: "author", "author.id contains page.author" -%}
+{%- if author -%}
+  <div class="page__author">
+    <a href="{{ author.url }}" aria-label="{{ author.name }}">
+      <picture>
+        <source srcset="/assets/images/authors/{{ page.author }}.webp" type="image/webp">
+        <img src="/assets/images/authors/{{ page.author }}.png" alt="{{ author.name }}">
+      </picture>
+      <dl>
+        <dt>{{ author.name }}</dt>
+        <dd>{{ author.position }}</dd>
+      </dl>
+    </a>
+  </div>
+{%- endif -%}

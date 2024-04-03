@@ -1,155 +1,87 @@
 .header {
-
+  background: linear-gradient(180deg, rgba(var(--rgb-black), 1) 0, rgba(var(--rgb-black), 0) 100%);
+  color: var(--color-white);
   display: flex;
-  flex-direction: column;
-  padding: 0.75em;
-  background-color: rgba(var(--rgb-base-darkest), 0.25);
-  backdrop-filter: blur(20px);
-  position: sticky;
-  top: 0px;
-  z-index: 102;
+  justify-content: flex-end;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 104
+}
 
+.header h1 {
+  order: 2;
+  pointer-events: auto;
+}
 
-  nav {
+.header h1 a {
+  display: block;
+  height: var(--line-height);
+  margin-right: var(--spacing);
+  margin-top: var(--spacing);
+}
 
-    display: flex;
-    justify-content: space-between;
+.header h1 a img {
+  height: 100%;
+  max-height: 100%;
+  width: auto;
+}
 
-    div {
+.header dl {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  line-height: var(--line-height);
+  order: 1;
+  padding-left: var(--spacing);
+  padding-top: var(--spacing);
+  pointer-events: auto
+}
 
-      align-items: center;
-      display: flex;
-      gap: 0.35em;
+.header dl dt,
+.header dl dd {
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  letter-spacing: normal
+}
 
-      a.logo {
-        color: var(--color-grey);
-        font-size: var(--font-size-small);
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        line-height: 1em;
-        padding: 0.125em 0 0 0;
-        text-decoration: none;
-      }
-    
-      span.slash {
-        display: none;
-        color: var(--color-grey-light);
-        font-size: var(--font-size-x-small);
-        font-weight: 700;
-      }
+.header dl dt a,
+.header dl dd a {
+  text-decoration: none
+}
 
-      span.breadcumb {
-        display: none;
-        color: var(--color-grey);
-        font-size: var(--font-size-small);
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        line-height: 1em;
-        padding: 0.125em 0 0 0;
-        text-decoration: none;
-      }
-    }
+.header dl dt a {
+  align-items: center;
+  display: flex;
+  gap: .5em
+}
 
-  
+.header dl dt a svg {
+  height: 1.2em;
+  width: 1.2em
+}
 
-    ul {
+.header dl dt a svg path {
+  fill: var(--color-white)
+}
 
-      align-items: center;
-      display: flex;
-      font-size: 50%;
-      letter-spacing: -0.01em;
-      list-style: none;
-      margin-right: -1.2em;
-      padding: 0;
+.header dl dd {
+  display: none
+}
 
-      li {
+.header dl dd:before {
+  color: var(--color-grey);
+  content: "/";
+  display: inline-flex;
+  font-weight: 500;
+  padding-left: .6em;
+  padding-right: .6em
+}
 
-        margin: 0;
-
-        a {
-          border-radius: 2.5em;
-          color: var(--color-mint);
-          line-height: 1em;
-          letter-spacing: -0.01em;
-          padding: 0.8em 1.2em 0.7em 1.2em;
-          text-align: center;
-          text-decoration: none;
-          transition:
-            background var(--transition),
-            color var(--transition)
-          ;
-        }
-
-        &.selected a {
-          background: none;
-          color: var(--color-black);
-        }
-
-      }
-
-    }
-
-  }
-
-  @media(min-width: 64em) {
-
-    padding-left: var(--space-large);
-    padding-right: var(--space-large);
-
-    nav {
-
-      div {
-
-        a.logo {
-
-          &:hover,
-          &:focus {
-            color: var(--color-mint);
-          }
-
-        }
-
-      }
-
-      ul {
-
-        display: flex;
-
-        li {
-
-          a {
-
-            &:hover,
-            &:focus {
-              background: var(--color-base-darker);
-              color: var(--color-black);
-            }
-
-          }
-
-          &.selected a {
-            background: none;
-          }
-
-        }
-
-      }
-
-    }
-
-  }
-
-  @media(min-width: 48em) {
-    nav{
-      div {
-        span.slash {
-          display: inline;
-        }
-
-        span.breadcumb {
-          display: inline;
-        }
-      }
-    }
+@media(min-width: 48em)and (hover: hover)and (pointer: fine) {
+  .header dl dd {
+    display: flex
   }
 }
