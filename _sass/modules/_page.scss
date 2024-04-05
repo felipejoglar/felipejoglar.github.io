@@ -6,7 +6,7 @@
 }
 
 .page:after {
-  background: linear-gradient(180deg, rgba(var(--rgb-black), 1) 0, rgba(var(--rgb-black), 0) 90%);
+  background: linear-gradient(180deg, rgba(var(--rgb-background), 1) 0, rgba(var(--rgb-background), 0) 90%);
   content: "";
   height: 7.4em;
   left: 0;
@@ -27,20 +27,20 @@
 }
 
 .page__headline {
-  color: var(--color-white);
+  color: var(--color-foreground);
   gap: .6em
 }
 
 .page__headline h1 {
   display: flex;
-  color: var(--color-white);
+  color: var(--color-foreground);
   font-size: var(--font-size-xxx-large);
   font-weight: 700;
   line-height: 1.2
 }
 
 .page__headline h1 span {
-  color: var(--color-grey);
+  color: var(--color-background-dimmed);
   font-weight: 300;
   margin-left: .3em;
   margin-right: .3em
@@ -64,7 +64,7 @@
 }
 
 .page__headline--post time {
-  color: var(--color-grey);
+  color: var(--color-background-dimmed);
   display: flex;
   font-size: var(--font-size-x-small);
   font-weight: 500;
@@ -85,7 +85,7 @@
 }
 
 .page__headline--post time span:before {
-  color: rgba(var(--rgb-grey), 0.6);
+  color: rgba(var(--rgb-background-dimmed), 0.6);
   content: "/";
   display: inline-flex;
   font-weight: 500;
@@ -103,7 +103,7 @@
 }
 
 .page__headline--author h2 {
-  color: var(--color-grey);
+  color: var(--color-background-dimmed);
   font-size: var(--font-size-x-large);
   font-weight: 500;
   line-height: 1.2
@@ -135,7 +135,7 @@
 }
 
 .page__headline--author ul li a svg path {
-  fill: var(--color-white)
+  fill: var(--color-foreground)
 }
 
 .page__headline--author ul li+li {
@@ -171,11 +171,11 @@
 }
 
 .page__author a dl dt {
-  color: var(--color-white);
+  color: var(--color-foreground);
 }
 
 .page__author a dl dd {
-  color: var(--color-grey);
+  color: var(--color-background-dimmed);
 }
 
 .page__content {

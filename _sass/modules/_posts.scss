@@ -27,7 +27,7 @@
 }
 
 .posts__post time a {
-  color: var(--color-grey);
+  color: var(--color-background-dimmed);
   font-weight: 500;
   text-decoration: none
 }
@@ -68,11 +68,11 @@
 }
 
 .posts__post div a dl dt {
-  color: var(--color-white)
+  color: var(--color-foreground)
 }
 
 .posts__post div a dl dd {
-  color: var(--color-grey)
+  color: var(--color-background-dimmed)
 }
 
 .posts .signup {

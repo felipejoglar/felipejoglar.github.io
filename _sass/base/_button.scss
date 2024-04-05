@@ -1,8 +1,8 @@
 .button {
   align-self: flex-start;
-  background: var(--color-white);
+  background: var(--color-foreground);
   border-radius: 1.3em;
-  color: var(--color-black);
+  color: var(--color-background);
   cursor: pointer;
   display: inline-flex;
   font-size: var(--font-size-x-small);
@@ -15,20 +15,24 @@
 }
 
 .button span {
-  color: var(--color-grey);
+  color: var(--color-background-dimmed);
   display: inline-flex
 }
 
 .button svg path {
-  fill: var(--color-grey)
+  fill: var(--color-background-dimmed)
 }
 
 .button--dim {
-  background: var(--color-grey-dark);
-  color: var(--color-white)
+  background: rgba(var(--rgb-foreground-subtle), 0.2);
+  color: var(--color-foreground);
+
+  @media (prefers-color-scheme: dark) {
+    background: var(--color-background-subtle);
+  }
 }
 
-.button--black {
-  background: var(--color-black);
-  color: var(--color-white)
+.button--inverted {
+  background: var(--color-background);
+  color: var(--color-foreground)
 }

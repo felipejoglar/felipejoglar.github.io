@@ -1,6 +1,6 @@
 .header {
-  background: linear-gradient(180deg, rgba(var(--rgb-black), 1) 0, rgba(var(--rgb-black), 0) 100%);
-  color: var(--color-white);
+  background: linear-gradient(180deg, rgba(var(--rgb-background), 1) 0, rgba(var(--rgb-background), 0) 100%);
+  color: var(--color-foreground);
   display: flex;
   justify-content: flex-end;
   left: 0;
@@ -49,7 +49,7 @@
 
 .header dl dt a,
 .header dl dd a {
-  color: var(--color-white);
+  color: var(--color-foreground);
   text-decoration: none
 }
 
@@ -65,7 +65,7 @@
 }
 
 .header dl dt a svg path {
-  fill: var(--color-white)
+  fill: var(--color-foreground)
 }
 
 .header dl dd {
@@ -73,7 +73,7 @@
 }
 
 .header dl dd:before {
-  color: var(--color-grey);
+  color: var(--color-background-dimmed);
   content: "/";
   display: inline-flex;
   font-weight: 500;

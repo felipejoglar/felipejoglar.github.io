@@ -4,20 +4,16 @@
   --rgb-grey: 105, 111, 117;
   --rgb-grey-dark: 15, 21, 27;
   --rgb-grey-light: 210, 216, 222;
-  --rgb-blurple: 85, 34, 250;
-  --rgb-yellow: 255, 226, 0;
-  --rgb-red: 232, 34, 36;
   --rgb-mint: 62, 180, 137;
   --rgb-blue: 61, 143, 179;
 
-  --color-black: rgb(var(--rgb-black));
-  --color-white: rgb(var(--rgb-white));
-  --color-grey: rgb(var(--rgb-grey));
-  --color-grey-dark: rgb(var(--rgb-grey-dark));
-  --color-grey-light: rgb(var(--rgb-grey-light));
-  --color-red: rgb(var(--rgb-red));
-  --color-primary: rgb(var(--rgb-mint));
-  --color-secondary: rgb(var(--rgb-blue));
+  --color-background: rgb(var(--rgb-background));
+  --color-background-dimmed: rgb(var(--rgb-background-dimmed));
+  --color-background-subtle: rgb(var(--rgb-background-subtle));
+  --color-foreground: rgb(var(--rgb-foreground));
+  --color-foreground-subtle: rgb(var(--rgb-foreground-subtle));
+  --color-primary: rgb(var(--rgb-primary));
+  --color-secondary: rgb(var(--rgb-secondary));
 
   --font-family: 'Colfax', Sans-Serif;
   --font-family-mono: ui-monospace, 'SFMono-Regular', SF Mono, Menlo, Consolas, Monospace;
@@ -37,7 +33,6 @@
   --transition: 0.2s cubic-bezier(0.37, 1, 0.74, 1);
 
   @media(min-width: 64em) and (hover: hover) and (pointer: fine) {
-
     --font-size: calc(1.25em + 1vw);
     --font-size-x-small: 50%;
     --font-size-small: 65%;
@@ -48,7 +43,25 @@
     --font-size-xxxx-large: 180%;
 
     --line-height: 1.3em;
-
   }
 
+  @media (prefers-color-scheme: light) {
+    --rgb-background: var(--rgb-white);
+    --rgb-background-subtle: var(--rgb-grey);
+    --rgb-background-dimmed: var(--rgb-grey-dark);
+    --rgb-foreground: var(--rgb-black);
+    --rgb-foreground-subtle: var(--rgb-grey-light);
+    --rgb-primary: var(--rgb-mint);
+    --rgb-secondary: var(--rgb-blue);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --rgb-background: var(--rgb-black);
+    --rgb-background-subtle: var(--rgb-grey-dark);
+    --rgb-background-dimmed: var(--rgb-grey);
+    --rgb-foreground: var(--rgb-white);
+    --rgb-foreground-subtle: var(--rgb-grey-light);
+    --rgb-primary: var(--rgb-mint);
+    --rgb-secondary: var(--rgb-blue);
+  }
 }
