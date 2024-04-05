@@ -8,11 +8,12 @@
       </picture>
     </a>
   </h1>
-  <ul>
-    {%- for item in site.data.nav -%}
-      {%- assign item_title = item.title | smartify -%}
-      {%- assign item_url = item.url -%}
-        <li><a href="{{ item_url }}"{% if item.external %} target="_blank" rel="noopener"{% endif %} aria-label="{{ item_title }}">{{ item_title }}</a></li>
-    {%- endfor -%}
-  </ul>
+  <dl>
+    <dt>
+      <a href="{{ '/blog/' | absolute_url }}" aria-label="Blog">Blog</a>
+    </dt>
+    {%- if title -%}
+    <dd>{{ title | truncate: 55 }}</dd>
+    {%- endif -%}
+  </dl>
 </header>
