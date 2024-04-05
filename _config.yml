@@ -9,6 +9,12 @@ highlighter: rouge
 
 permalink: /:title/
 
+collections:
+  authors:
+    output: true
+  series:
+    output: true
+
 defaults:
   - scope:
       type: "posts"
@@ -29,11 +35,8 @@ exclude:
 sass:
   style: compressed
 
+plugins:
+  - jekyll-redirect-from
+
 redirect_from:
   json: false
-
-collections:
-  authors:
-    output: true
-  series:
-    output: true

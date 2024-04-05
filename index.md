@@ -1,5 +1,3 @@
 ---
-title: "On writing software well"
-layout: blog
+redirect_to: /blog
 ---
-Here are my approaches when writing software. How I build things ❤️
