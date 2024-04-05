@@ -13,7 +13,6 @@
   --color-foreground: rgb(var(--rgb-foreground));
   --color-foreground-subtle: rgb(var(--rgb-foreground-subtle));
   --color-primary: rgb(var(--rgb-primary));
-  --color-secondary: rgb(var(--rgb-secondary));
 
   --font-family: 'Colfax', Sans-Serif;
   --font-family-mono: ui-monospace, 'SFMono-Regular', SF Mono, Menlo, Consolas, Monospace;
@@ -48,11 +47,10 @@
   @media (prefers-color-scheme: light) {
     --rgb-background: var(--rgb-white);
     --rgb-background-subtle: var(--rgb-grey);
-    --rgb-background-dimmed: var(--rgb-grey-dark);
+    --rgb-background-dimmed: var(--rgb-grey);
     --rgb-foreground: var(--rgb-black);
     --rgb-foreground-subtle: var(--rgb-grey-light);
-    --rgb-primary: var(--rgb-mint);
-    --rgb-secondary: var(--rgb-blue);
+    --rgb-primary: var(--rgb-blue);
   }
 
   @media (prefers-color-scheme: dark) {
@@ -62,6 +60,5 @@
     --rgb-foreground: var(--rgb-white);
     --rgb-foreground-subtle: var(--rgb-grey-light);
     --rgb-primary: var(--rgb-mint);
-    --rgb-secondary: var(--rgb-blue);
   }
 }
