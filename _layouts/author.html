@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  {%- include head.html title = page.name-%}
+  <body>
+    {%- include header.html title = page.name -%}
+    <main>
+      <section class="page">
+        <div class="page__headline page__headline--author">
+          <h1>{{ page.name }}</h1>
+          <h2>{{ page.position }}</h2>
+          {{ content }}
+        </div>
+        <div class="page__body">
+          {%- assign posts = site.posts | where_exp: "post", "page.id contains post.author" -%}
+          {%- include posts.html posts = posts -%}
+        </div>
+      </section>
+    </main>
+    {%- include footer.html -%}
+  </body>
+</html>

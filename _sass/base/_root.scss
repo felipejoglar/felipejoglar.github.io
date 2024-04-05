@@ -7,15 +7,17 @@
   --rgb-blurple: 85, 34, 250;
   --rgb-yellow: 255, 226, 0;
   --rgb-red: 232, 34, 36;
+  --rgb-mint: 62, 180, 137;
+  --rgb-blue: 61, 143, 179;
 
   --color-black: rgb(var(--rgb-black));
   --color-white: rgb(var(--rgb-white));
   --color-grey: rgb(var(--rgb-grey));
   --color-grey-dark: rgb(var(--rgb-grey-dark));
   --color-grey-light: rgb(var(--rgb-grey-light));
-  --color-blurple: rgb(var(--rgb-blurple));
-  --color-yellow: rgb(var(--rgb-yellow));
   --color-red: rgb(var(--rgb-red));
+  --color-primary: rgb(var(--rgb-mint));
+  --color-secondary: rgb(var(--rgb-blue));
 
   --font-family: 'Colfax', Sans-Serif;
   --font-family-mono: ui-monospace, 'SFMono-Regular', SF Mono, Menlo, Consolas, Monospace;

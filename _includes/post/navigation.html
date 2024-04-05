@@ -2,11 +2,11 @@
 {%- for doc in posts -%}
   {%- if doc.id == page.id -%}
     {%- unless forloop.last -%}
-      {%- assign posts_index_next = forloop.index -%}
+      {%- assign posts_index_prev = forloop.index -%}
     {%- endunless -%}
 
     {%- unless forloop.first -%}
-      {%- assign posts_index_prev = forloop.index | minus: 2 -%}
+      {%- assign posts_index_next = forloop.index | minus: 2 -%}
     {%- endunless -%}
   {%- endif -%}
 {%- endfor -%}

@@ -14,6 +14,14 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope: 
+      type: "authors"
+    values:
+      layout: "author"
+  - scope: 
+      type: "series"
+    values:
+      layout: "series"
 
 exclude:
   - README.md

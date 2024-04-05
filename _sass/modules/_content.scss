@@ -15,7 +15,7 @@
   .content>*+h6 {
     --flow-space: calc(var(--line-height) * 1.2)
   }
-  
+
   .content h1,
   .content h2,
   .content h3,
@@ -32,7 +32,7 @@
   .content h4 a,
   .content h5 a,
   .content h6 a {
-    text-decoration: none
+    text-decoration: none;
   }
   
   .content h1 i,
@@ -343,7 +343,7 @@
     margin-top: var(--line-height)
   }
   
-  @media(min-width: 64em)and (hover: hover)and (pointer: fine) {
+  @media(min-width: 64em) and (hover: hover) and (pointer: fine) {
   
     .content h1 a:hover,
     .content h1 a:focus,

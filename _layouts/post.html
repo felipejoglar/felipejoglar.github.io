@@ -2,7 +2,7 @@
 <html lang="en">
   {%- include head.html -%}
   <body>
-    {%- include header.html title=page.title -%}
+    {%- include header.html title = page.title -%}
     <main>
       <section class="page">
         <div class="page__headline page__headline--post">
@@ -11,12 +11,12 @@
             {%- assign series = site.series | find_exp: "item", "item.id contains page.series" -%}
             {%- if series -%}
             <span>
-              <a href="{{ series.url }}">{{ series.name }}</a>
+              <a href="{{ series.url }}">{{ series.title }}</a>
             </span>
             {%- endif -%}
           </time>
-          <h1>{{ page.title | markdownify }}</h1>
-          {{ page.description | markdownify }}
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
 
           {%- include post/author.html -%}
         </div>

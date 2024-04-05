@@ -1,7 +1,6 @@
 .post {
     display: flex;
-    flex-direction: column;
-    max-width: 49ch
+    flex-direction: column
   }
   
 .post__content {
@@ -60,11 +59,7 @@
   margin-bottom: 3.7em
 }
 
-@media(min-width: 64em)and (hover: hover)and (pointer: fine) {
-  .post {
-    max-width: 39ch
-  }
-
+@media(min-width: 64em) and (hover: hover) and (pointer: fine) {
   .post details,
   .post div.media,
   .post figure.highlight,

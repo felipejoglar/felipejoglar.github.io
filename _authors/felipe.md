@@ -1,5 +1,5 @@
 ---
 name: Felipe Joglar
-position: Android Programmer
+position: Programmer 
 ---
-Hi!! I'm Felipe, an Android Programmer.
+A programmer who loves building things and learning through every part of the process.

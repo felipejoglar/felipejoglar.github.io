@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  {%- include head.html title = page.title-%}
+  <body>
+    {%- include header.html title = page.title -%}
+    <main>
+      <section class="page">
+        <div class="page__headline page__headline--series">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+        </div>
+        <div class="page__body">
+          {%- assign posts = site.posts | where_exp: "post", "page.id contains post.series" -%}
+          {%- include posts.html posts = posts -%}
+        </div>
+      </section>
+    </main>
+    {%- include footer.html -%}
+  </body>
+</html>

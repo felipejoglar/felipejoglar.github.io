@@ -1,21 +1,19 @@
 <!doctype html>
 <html lang="en">
-  {% include head.html %}
+  {%- include head.html -%}
   <body>
-    {% include header.html %}
+    {%- include header.html -%}
     <main>
       <section class="page">
-        <div class="page__headline">
+        <div class="page__headline page__headline--posts">
           <h1>{{ page.title }}</h1>
           {{ page.description }}
         </div>
         <div class="page__body">
-          <div class="page__content content">
-            {{ content }}
-          </div>
+          {%- include posts.html posts = site.posts -%}
         </div>
       </section>
     </main>
-    {% include footer.html %}
+    {%- include footer.html -%}
   </body>
 </html>

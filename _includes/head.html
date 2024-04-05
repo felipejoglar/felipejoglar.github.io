@@ -1,5 +1,5 @@
-{%- assign title = page.title | default: site.title | strip_html | smartify -%}
-{%- assign description = page.description | default: site.description | markdownify | strip_html | strip_newlines -%}
+{%- assign title = include.title | default: page.title | strip_html | smartify -%}
+{%- assign description = page.description | default: site.description | strip_html | strip_newlines -%}
 {%- assign image = page.image | default: site.image | absolute_url -%}
 {%- assign url = page.url | absolute_url -%}
 <head>
