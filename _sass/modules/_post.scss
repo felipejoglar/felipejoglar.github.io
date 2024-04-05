@@ -1,0 +1,71 @@
+.post {
+    display: flex;
+    flex-direction: column
+  }
+  
+.post__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.7em;
+  margin-top: 1.85em;
+  position: relative
+}
+
+.post__meta ul {
+  list-style: none;
+  padding: 0
+}
+
+.post__meta ul li {
+  padding-left: 1.4em;
+  position: relative
+}
+
+.post__meta ul li:before {
+  color: rgba(var(--rgb-background-subtle), 0.6);
+  content: "→";
+  display: inline-block;
+  font-weight: 500;
+  left: 0;
+  position: absolute;
+  width: 1.4em
+}
+
+.post__meta ul li+li {
+  margin-top: .3em
+}
+
+.post__navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.post__navigation .post__back {
+  --flow-space: calc(var(--line-height) * 2);
+  align-self: flex-start;
+  align-items: center
+}
+
+.post__navigation .post__next {
+  --flow-space: calc(var(--line-height) * 2);
+  align-self: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.post .signup {
+  margin-bottom: 3.7em
+}
+
+@media(min-width: 64em) and (hover: hover) and (pointer: fine) {
+  .post details,
+  .post div.media,
+  .post figure.highlight,
+  .post div.highlighter-rouge {
+    margin-left: -1em;
+    max-width: calc(100% + 2em);
+    width: calc(100% + 2em)
+  }
+}

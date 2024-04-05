@@ -11,10 +11,17 @@ permalink: /:title/
 
 defaults:
   - scope:
-      path: ""
       type: "posts"
     values:
       layout: "post"
+  - scope: 
+      type: "authors"
+    values:
+      layout: "author"
+  - scope: 
+      type: "series"
+    values:
+      layout: "series"
 
 exclude:
   - README.md
@@ -24,3 +31,9 @@ sass:
 
 redirect_from:
   json: false
+
+collections:
+  authors:
+    output: true
+  series:
+    output: true

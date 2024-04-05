@@ -1,0 +1,27 @@
+{%- assign posts = include.posts -%}
+<div class="posts__container">
+  {%- for post in posts -%}
+  <div class="posts__post">
+    <time datetime="{{ post.date}}">
+      <a href="{{ post.url }}" aria-label="{{ post.title }}">{{ post.date | date: "%B %-d, %Y" }}</a>
+    </time>
+    <h3><a href="{{ post.url }}" aria-label="{{ post.title }}">{{ post.title }}</a></h3>
+    {{ post.description }}
+    {%- assign author = site.authors | find_exp: "author", "author.id contains post.author" -%}
+    {%- if author -%}
+    <div>
+      <a href="{{ author.url }}" aria-label="{{ author.name }}">
+        <picture>
+          <source srcset="/assets/images/authors/{{ post.author }}.webp" type="image/webp">
+          <img src="/assets/images/authors/{{ post.author }}.png" alt="{{ author.name }}">
+        </picture>
+        <dl>
+          <dt>{{ author.name }}</dt>
+          <dd>{{ author.position }}</dd>
+        </dl>
+      </a>
+    </div>
+    {%- endif -%}
+  </div>
+  {%- endfor -%}
+</div>

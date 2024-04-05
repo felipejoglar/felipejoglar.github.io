@@ -1,0 +1,38 @@
+.media {
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+    margin-bottom: .3em
+  }
+  
+  .media__element {
+    display: flex;
+    justify-content: center;
+    margin-top: .25em
+  }
+  
+  .media__element img,
+  .media__element video {
+    border-radius: .3em;
+    overflow: hidden
+  }
+  
+  .media__caption {
+    font-size: 80%;
+    font-style: italic;
+    opacity: .8;
+    margin-top: 0.3em;
+    margin-bottom: -0.3em;
+    text-align: center
+  }
+  
+  .media--portrait .media__element {
+    background: var(--color-background-subtle);
+    border-radius: .3em;
+    padding: 1em
+  }
+  
+  .media--portrait .media__element img,
+  .media--portrait .media__element video {
+    max-width: 20rem
+  }

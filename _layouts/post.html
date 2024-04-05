@@ -1,61 +1,50 @@
 <!doctype html>
 <html lang="en">
-  {% include head.html %}
+  {%- include head.html -%}
   <body>
-    {% include header.html title=page.title %}
+    {%- include header.html title = page.title -%}
     <main>
-      {% assign posts = site.posts | sort: 'order' %}
-      {% for doc in posts %}
-        {% if doc.title == page.title %}
-          {% unless forloop.last %}
-            {% assign posts_index_next = forloop.index %}
-          {% endunless %}
+      <section class="page">
+        <div class="page__headline page__headline--post">
+          <time datetime="{{ page.date }}">
+            {{ page.date | date: "%B %-d, %Y" }}
+            {%- assign series = site.series | find_exp: "item", "item.id contains page.series" -%}
+            {%- if series -%}
+            <span>
+              <a href="{{ series.url }}">{{ series.title }}</a>
+            </span>
+            {%- endif -%}
+          </time>
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
 
-          {% unless forloop.first %}
-            {% assign posts_index_prev = forloop.index | minus: 2 %}
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
+          {%- include post/author.html -%}
+        </div>
 
-      <div class="page post">
-        <section>
-          <article>
-            <div class="post-headline">
-              <div class="date">{{ page.date | date: "%B %-d, %Y" }}</div>
-              <h1 class="title">{{ page.title | markdownify }}</h1>
-              <div class="desc">{{ page.description | markdownify }}</div>
-              {% for tag in page.tags %}
-                <a class="tag" href="#" aria-label="{{ tag }}">{{ tag }}</a>
-              {% endfor %}
+        <div class="page__body">
+          <div class="post">
+            <div class="post__content content">
+              {%- if page.image -%}
+              <div class="media media--image">
+                <div class="media__element">
+                  <figure>
+                    <picture>
+                      <source srcset="{{ page.image.url }}.webp" type="image/webp">
+                      <img src="{{ page.image.url }}" alt="{{ page.title }} cover">
+                    </picture>
+                    <figcaption class="media__caption">{{ page.image.caption }}</figcaption>
+                  </figure>
+                </div>
+              </div>
+              {%- endif -%}
+
+              {{ content }}
             </div>
-            {{ content }}
-            <nav>
-              {% if posts_index_prev %}
-                {% assign posts_prev = posts[posts_index_prev] %}
-                {% assign posts_prev_title = posts_prev.title | smartify %}
-                <a href="{{ posts_prev.url | absolute_url }}" aria-label="{{ posts_prev_title }}">
-                  <dl>
-                    <dt>Previous</dt>
-                    <dd>{{ posts_prev_title | markdownify }}</dd>
-                  </dl>
-                </a>
-              {% endif %}
-
-              {% if posts_index_next %}
-                {% assign posts_next = posts[posts_index_next] %}
-                {% assign posts_next_title = posts_next.title | smartify %}
-                <a class="next" href="{{ posts_next.url | absolute_url }}" aria-label="{{ posts_next_title }}">
-                  <dl>
-                    <dt>Next</dt>
-                    <dd>{{ posts_next_title | markdownify }}</dd>
-                  </dl>
-                </a>
-              {% endif %}
-            </nav>
-          </article>
-        </section>
-      </div>
+            {%- include post/navigation.html -%}
+          </div>
+        </div>
+      </section>
     </main>
-    {% include footer.html %}
+    {%- include footer.html -%}
   </body>
 </html>

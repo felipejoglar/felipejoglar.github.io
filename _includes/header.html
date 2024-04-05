@@ -1,16 +1,19 @@
+{%- assign title = include.title -%}
 <header class="header">
-  <nav>
-    <div>
-      <a class="logo" href="{{ '/' | absolute_url }}" aria-label="Felipe Joglar">Felipe Joglar</a>
-      {% if include.title %}
-        <span class="slash">/ </span><span class="breadcumb">{{ include.title | truncate: 45 | markdownify}}</span>
-      {% endif %}
-    </div>
-    <ul>
-      {% for item in site.data.nav %}
-        {% assign item_collection = item.collection | default: false %}
-        <li{% if item.url == page.url or item_collection == page.collection %} class="selected"{% endif %}><a href="{{ item.url | absolute_url}}"{% if item.external %} target="_blank" rel="noopener"{% endif %} aria-label="{{ item.title | smartify }}">{{ item.title | smartify }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
+  <h1>
+    <a href="{{ '/' | absolute_url }}" aria-label="Felipe Joglar">
+      <picture>
+        <source srcset="/assets/images/logo-white.svg" media="(prefers-color-scheme: dark)">
+        <img src="/assets/images/logo-black.svg" alt="Felipe Joglar">
+      </picture>
+    </a>
+  </h1>
+  <dl>
+    <dt>
+      <a href="{{ '/' | absolute_url }}" aria-label="Blog">Blog</a>
+    </dt>
+    {%- if title -%}
+    <dd>{{ title | truncate: 55 }}</dd>
+    {%- endif -%}
+  </dl>
 </header>

@@ -1,0 +1,148 @@
+<mxfile host="Electron" modified="2024-02-19T23:20:00.737Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="rpxgaCdR4-hMTe0Z2FsV" version="23.1.5" type="device">
+  <diagram name="Base" id="y9aYw-ZO2EPJaPuBxRxH">
+    <mxGraphModel dx="1026" dy="743" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;strokeColor=#FFB570;fontFamily=Fira Code;fontColor=#FFB570;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="110" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-7" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;strokeColor=#7EA6E0;fontFamily=Fira Code;fontColor=#7EA6E0;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="110" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-8" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#7EA6E0;fontColor=#7EA6E0;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="370" as="sourcePoint" />
+            <mxPoint x="320" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-9" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#7EA6E0;endFill=0;fontColor=#7EA6E0;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="389.5" as="sourcePoint" />
+            <mxPoint x="320" y="389.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-10" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#7EA6E0;endFill=0;dashed=1;fontColor=#7EA6E0;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="410" as="sourcePoint" />
+            <mxPoint x="320" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;strokeColor=#67AB9F;fontFamily=Fira Code;fontColor=#67AB9F;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="110" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-12" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#67AB9F;fontColor=#67AB9F;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="470" as="sourcePoint" />
+            <mxPoint x="320" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-13" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#67AB9F;endFill=0;fontColor=#67AB9F;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="489.5" as="sourcePoint" />
+            <mxPoint x="320" y="489.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-14" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#67AB9F;endFill=0;dashed=1;fontColor=#67AB9F;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="510" as="sourcePoint" />
+            <mxPoint x="320" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;strokeColor=#FFD966;fontFamily=Fira Code;fontColor=#FFD966;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="110" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-16" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#FFD966;fontColor=#FFD966;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="570" as="sourcePoint" />
+            <mxPoint x="320" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-17" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#FFD966;endFill=0;fontColor=#FFD966;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="589.5" as="sourcePoint" />
+            <mxPoint x="320" y="589.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-18" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#FFD966;endFill=0;dashed=1;fontColor=#FFD966;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="610" as="sourcePoint" />
+            <mxPoint x="320" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;strokeColor=#A680B8;fontFamily=Fira Code;fontColor=#A680B8;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="110" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-20" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#A680B8;fontColor=#A680B8;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="670" as="sourcePoint" />
+            <mxPoint x="320" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-21" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#A680B8;endFill=0;fontColor=#A680B8;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="689.5" as="sourcePoint" />
+            <mxPoint x="320" y="689.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-22" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#A680B8;endFill=0;dashed=1;fontColor=#A680B8;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="710" as="sourcePoint" />
+            <mxPoint x="320" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-23" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;strokeColor=#EA6B66;fontFamily=Fira Code;fontColor=#EA6B66;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="110" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-24" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#EA6B66;fontColor=#EA6B66;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="770" as="sourcePoint" />
+            <mxPoint x="320" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-25" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#EA6B66;endFill=0;fontColor=#EA6B66;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="789.5" as="sourcePoint" />
+            <mxPoint x="320" y="789.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-26" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#EA6B66;endFill=0;dashed=1;fontColor=#EA6B66;fontSize=14;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="810" as="sourcePoint" />
+            <mxPoint x="320" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;fontSize=14;strokeColor=#FFB570;fontColor=#FFB570;strokeWidth=2;endFill=1;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="270" as="sourcePoint" />
+            <mxPoint x="320" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="261" y="270" />
+              <mxPoint x="261" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;fontSize=14;strokeColor=#FFB570;fontColor=#FFB570;strokeWidth=2;endFill=0;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="289.5" as="sourcePoint" />
+            <mxPoint x="320" y="289.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="261" y="289.5" />
+              <mxPoint x="261" y="289.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tnn5uOECEX3k7BpZ9qny-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;fontSize=14;strokeColor=#FFB570;fontColor=#FFB570;strokeWidth=2;endFill=0;dashed=1;fontFamily=Fira Code;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="310" as="sourcePoint" />
+            <mxPoint x="320" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="261" y="310" />
+              <mxPoint x="261" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

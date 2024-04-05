@@ -1,0 +1,93 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  max-width: 49ch
+}
+
+.posts__container {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-small);
+  gap: calc(var(--line-height)*2);
+  letter-spacing: normal;
+  margin-bottom: 3.7em;
+  margin-top: 3.7em
+}
+
+.posts__post {
+  display: flex;
+  flex-direction: column;
+  gap: .6em
+}
+
+.posts__post time {
+  font-size: var(--font-size-small);
+  line-height: 1;
+  margin-bottom: -0.15em
+}
+
+.posts__post time a {
+  color: var(--color-background-dimmed);
+  font-weight: 500;
+  text-decoration: none
+}
+
+.posts__post h3 {
+  font-size: var(--font-size-xxx-large);
+  font-weight: 700;
+  line-height: 1.2
+}
+
+.posts__post p br {
+  display: none
+}
+
+.posts__post div {
+  display: flex;
+  font-size: var(--font-size-small)
+}
+
+.posts__post div a {
+  align-items: center;
+  display: flex;
+  gap: .8em;
+  text-decoration: none
+}
+
+.posts__post div a img {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 3.2em
+}
+
+.posts__post div a dl {
+  display: flex;
+  flex-direction: column;
+  gap: .4em;
+  line-height: 1
+}
+
+.posts__post div a dl dt {
+  color: var(--color-foreground)
+}
+
+.posts__post div a dl dd {
+  color: var(--color-background-dimmed)
+}
+
+.posts .signup {
+  margin-bottom: 3.7em;
+  order: 1
+}
+
+@media(min-width: 64em) and (hover: hover) and (pointer: fine) {
+  .posts {
+    max-width: 39ch
+  }
+
+  .posts .signup {
+    margin-bottom: 0;
+    margin-top: 3.7em;
+    order: 0
+  }
+}

@@ -4,7 +4,17 @@
   <body>
     {% include header.html %}
     <main>
-      {{ content }}
+      <section class="page">
+        <div class="page__headline">
+          <h1>{{ page.title }}</h1>
+          {{ page.description }}
+        </div>
+        <div class="page__body">
+          <div class="page__content content">
+            {{ content }}
+          </div>
+        </div>
+      </section>
     </main>
     {% include footer.html %}
   </body>
