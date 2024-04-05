@@ -7,7 +7,7 @@
       <section class="page">
         <div class="page__headline page__headline--posts">
           <h1>{{ page.title }}</h1>
-          {{ page.description }}
+          {{ content }}
         </div>
         <div class="page__body">
           {%- include posts.html posts = site.posts -%}
