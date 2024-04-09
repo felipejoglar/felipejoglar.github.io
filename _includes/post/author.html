@@ -1,4 +1,4 @@
-{%- assign author = site.authors | find_exp: "author", "author.id contains page.author" -%}
+{%- assign author = site.authors | find_exp: "author", "author.identifier == page.author" -%}
 {%- if author -%}
 <div class="page__author">
   <a href="{{ author.url }}" aria-label="{{ author.title }}">
