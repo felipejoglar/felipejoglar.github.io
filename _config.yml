@@ -31,6 +31,7 @@ defaults:
 
 exclude:
   - README.md
+  - felipejoglar.drawio
 
 sass:
   style: compressed
