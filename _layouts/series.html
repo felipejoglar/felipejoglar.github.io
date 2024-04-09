@@ -10,7 +10,7 @@
           {{ content }}
         </div>
         <div class="page__body">
-          {%- assign posts = site.posts | where_exp: "post", "page.id contains post.series" -%}
+          {%- assign posts = site.posts | where: "series", page.tag -%}
           {%- include posts.html posts = posts -%}
         </div>
       </section>

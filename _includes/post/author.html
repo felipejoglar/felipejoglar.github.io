@@ -1,14 +1,14 @@
-{%- assign author = site.authors | find_exp: "author", "author.identifier == page.author" -%}
+{%- assign author = site.authors | where:"tag", page.author | first -%}
 {%- if author -%}
 <div class="page__author">
-  <a href="{{ author.url }}" aria-label="{{ author.title }}">
+  <a href="{{ author.url }}" aria-label="{{ author.name }}">
     <picture>
-      <source srcset="/assets/images/authors/{{ page.author }}.webp" type="image/webp">
-      <img src="/assets/images/authors/{{ page.author }}.png" alt="{{ author.title }}">
+      <source srcset="/assets/images/authors/{{ author.tag }}.webp" type="image/webp">
+      <img src="/assets/images/authors/{{ author.tag }}.png" alt="{{ author.name }}">
     </picture>
     <dl>
       <dt>{{ author.title }}</dt>
-      <dd>{{ author.position }}</dd>
+      <dd>{{ author.role }}</dd>
     </dl>
   </a>
 </div>
