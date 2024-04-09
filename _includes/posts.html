@@ -7,7 +7,7 @@
     </time>
     <h3><a href="{{ post.url }}" aria-label="{{ post.title }}">{{ post.title }}</a></h3>
     {{ post.description }}
-    {%- assign author = site.people | where:"tag", post.author | first -%}
+    {%- assign author = site.people | find:"tag", post.author -%}
     {%- if author -%}
     <div>
       <a href="{{ author.url }}" aria-label="{{ author.title }}">

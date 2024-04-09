@@ -8,7 +8,7 @@
         <div class="page__headline page__headline--post">
           <time datetime="{{ page.date }}">
             {{ page.date | date: "%B %-d, %Y" }}
-            {%- assign series = site.series | where: "tag", page.series | first -%}
+            {%- assign series = site.series | find: "tag", page.series -%}
             {%- if series -%}
             <span>
               <a href="{{ series.url }}">{{ series.title }}</a>

@@ -1,4 +1,4 @@
-{%- assign author = site.people | where:"tag", page.author | first -%}
+{%- assign author = site.people | find:"tag", page.author -%}
 {%- if author -%}
 <div class="page__author">
   <a href="{{ author.url }}" aria-label="{{ author.name }}">
