@@ -10,7 +10,7 @@ highlighter: rouge
 permalink: /blog/:title/
 
 collections:
-  authors:
+  people:
     output: true
   series:
     output: true
@@ -21,7 +21,7 @@ defaults:
     values:
       layout: "post"
   - scope: 
-      type: "authors"
+      type: "people"
     values:
       layout: "author"
   - scope: 
