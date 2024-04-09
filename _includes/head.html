@@ -1,7 +1,11 @@
 {%- assign title = include.title | default: page.title | strip_html | smartify -%}
 {%- assign description = page.description | default: site.description | strip_html | strip_newlines -%}
-{%- assign image = page.image | default: site.image | absolute_url -%}
 {%- assign url = page.url | absolute_url -%}
+{%- if page.layout == "post" -%}
+  {%- assign image = "/assets/images/opengraph/" | append: page.slug | append: ".png" | absolute_url  -%}
+{%- else -%}
+  {%- assign image = site.image | absolute_url -%}  
+{%- endif -%}
 <head>
   <title>{{ site.title | smartify }}{%- if title -%}{{ title | prepend: ' &mdash; ' }}{%- endif -%}</title>
 
@@ -27,8 +31,8 @@
   <meta name="twitter:site" content="@felipejoglar">
 
   <link rel="canonical" href="{{ url }}" />
-  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" />
-  <link rel="mask-icon" href="{{ '/assets/images/mask-icon.svg' | relative_url }}" color="#3EB489" />
-  <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}" />
+  <link rel="icon" href="{{ '/assets/images/global/favicon.svg' | relative_url }}" />
+  <link rel="mask-icon" href="{{ '/assets/images/global/mask-icon.svg' | relative_url }}" color="#3EB489" />
+  <link rel="apple-touch-icon" href="{{ '/assets/images/global/apple-touch-icon.png' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 </head>

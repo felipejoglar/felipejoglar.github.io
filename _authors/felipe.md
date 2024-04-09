@@ -1,5 +1,6 @@
 ---
-name: Felipe Joglar
-position: Programmer 
+title: "Felipe Joglar"
+description: "Posts written for felipejoglar.dev"
+position: "Programmer" 
 ---
 A programmer who loves building things and learning through every part of the process.
