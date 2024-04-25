@@ -1,6 +1,5 @@
 ---
 title: "Felipe Joglar"
-description: "Posts written for felipejoglar.dev"
 role: "Programmer"
 tag: "felipe"
 ---
